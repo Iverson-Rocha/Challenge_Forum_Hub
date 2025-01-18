@@ -1,57 +1,49 @@
-# 🧵 Fórum Hub API
+<h1> Challenge Fórum Hub
 
-Este projeto é uma **API RESTful** para o gerenciamento de tópicos e discussões, desenvolvida como parte do challenge promovido pela **Alura** em parceria com o programa **Oracle Next Education**.
+## Este projeto foi desenvolvido para gerenciar tópicos e discussão em um fórum, além de realizar o armazenamento local de dados.
 
----
-
-## 🚀 Tecnologias Utilizadas
-
-- **Linguagem:** Java 17
-- **Framework:** Spring Boot (versão 3.3.5)
-- **Banco de Dados:** MySQL, com gerenciamento de migrações via Flyway
-- **Gerenciamento de Dependências:** Maven
-- **Validação e Segurança:** Spring Validation e Spring Security
-- **Autenticação:** Implementada com JWT (Java Web Token)
-- **Documentação:** Gerada automaticamente usando Springdoc OpenAPI
 
 ---
 
-## 📦 Dependências
 
-A configuração completa está disponível no arquivo **`pom.xml`**, mas aqui estão as principais dependências utilizadas:
+<h2>  Funcionalidades
 
-- **Spring Boot Starter Web:** Para desenvolvimento de APIs REST.
-- **Spring Boot Starter Data JPA:** Para manipulação de dados no banco de dados.
-- **Spring Boot Starter Validation:** Para validações dos dados.
-- **Spring Boot Starter Security:** Para configuração de autenticação e autorização.
-- **Flyway:** Para migração e versionamento de banco de dados.
-- **Lombok:** Para redução de código boilerplate.
-- **Springdoc OpenAPI:** Para geração de documentação interativa da API.
-- **MySQL Connector:** Para conexão com o banco de dados.
+###  Autenticação JWT
 
----
+![img_authe](https://github.com/user-attachments/assets/990c5153-1c94-4a46-9d4e-242e9912e58d)
 
-## ✨ Funcionalidades
+###  Listagem de Tópicos
 
-### 🔹 Cadastro de Tópicos
-Permite registrar novos tópicos, validando a unicidade de título e mensagem.
+![img_listar](https://github.com/user-attachments/assets/3f70f10f-2470-4661-a692-135e7b727829)
 
-### 🔹 Listagem de Tópicos
-Lista tópicos registrados no sistema, com suporte a paginação e ordenação.
+###  Listagem de Tópico
 
-### 🔹 Detalhamento de Tópico
-Permite visualizar informações detalhadas de um tópico por meio de seu ID.
+![img_listar_topico](https://github.com/user-attachments/assets/77ceb833-172b-4305-8961-3c031e1bd63a)
 
-### 🔹 Atualização e Exclusão
-- Atualização de informações existentes.
-- Exclusão lógica de tópicos, marcando-os como inativos.
+###  Registrar Tópico
 
-### 🔹 Autenticação JWT
-Garantia de que apenas usuários autenticados possam acessar os endpoints protegidos.
+![img_registrar](https://github.com/user-attachments/assets/fcb65ed5-79e0-4ed6-9495-958794d3db88)
+
+###  Atualização  
+
+![img_atualizar](https://github.com/user-attachments/assets/80567389-d2f2-477b-907c-a747d323ba2f)
+
+###  Exclusão 
+
+![img_deletar](https://github.com/user-attachments/assets/55f00617-24d4-4259-99fe-db5f81addccd)
+
+
 
 ---
+<h2>Tecnologias Utilizadas
 
-## 🛠️ Sugestão de Testes com Insomnia
-Recomenda-se o uso do **Insomnia** para realizar os testes dos endpoints da API, configurando as variáveis de ambiente para facilitar as requisições e utilizando o token JWT para autenticação nos endpoints protegidos.
++ Linguagem: Java 
++ Framework: Spring Boot
++ Banco de Dados: MySQL, com gerenciamento de migrações via Flyway
++ Gerenciamento de Dependências:** Maven
++ Validação e Segurança:** Spring Validation e Spring Security+ 
++ Autenticação: Implementada com JWT (Java Web Token)
++ Documentação: Gerada automaticamente usando Springdoc OpenAPI
++ Testes realizados utilizando o Insomnia
 
 ---
